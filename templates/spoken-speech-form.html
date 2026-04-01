@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\sj02093\Desktop\programming\python\dashboard\static\index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="C:\Users\sj02093\Desktop\programming\python\dashboard\static\spoken-speech-form.css">
+    <title>New Speech</title>
+</head>
+<body>
+    <div id="page-grid">
+        <div class="page-header">
+            <nav id="top-nav">
+                <div class="header-links-container">
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="header-links-container">
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </span>
+                    </a> 
+                </div> 
+            </nav>
+        </div>
+        <div class="main-content">
+                <aside>
+                    <a class="aside-link" href="">
+                        <span class="icon">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </span>
+                        <span class="icon-text">New Speech</span>
+                    </a>
+                    <a class="aside-link" href="">
+                        <span class="icon">
+                            <i class="fa fa-microphone" aria-hidden="true"></i>
+                        </span>
+                        <span class="icon-text">Said Speeches</span>
+                    </a>
+                    <a class="aside-link" href="">
+                        <span class="icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                        <span class="icon-text">Saved Speeches</span>
+                    </a>
+                    <a class="aside-link" href="">
+                        <span class="icon"><i class="fa fa-print" aria-hidden="true"></i></span>
+                        <span class="icon-text">Create report</span>
+                    </a>
+                </aside>
+                <main>
+                    <div class="dashboard-summary">
+                        <div class="summary-spans">
+                            <div class="summary-info">
+                                <span>
+                                    <h4>Date:</h4>
+                                    <h3>{{}}</h3>
+                                </span>
+                                <span>
+                                    <h4>Class:</h4>
+                                    <h3>{{}}</h3>
+                                </span>
+                                <span>
+                                    <h4>Stream:</h4>
+                                    <h3>{{}}</h3>
+                                </span>
+                            </div>
+                            <div class="summary-info">
+                                <span>
+                                    <h4>Teacher:</h4>
+                                    <h3>{{}}</h3>
+                                </span>
+                            </div> 
+                        </div>
+                        <div class="summary-spans">
+                            <span>
+                                <h4>Status:</h4>
+                                <span class="progress">
+                                    {{Progress-round1..%..}}
+                                </span>
+                                <span>
+                                    {{Progress-round2..%..}}
+                                </span>
+                            </span>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="spoken-speech-form-container">
+                        <form action="">
+                            <fieldset>
+                                <span class="text">Name:</span>
+                                <span class="input">
+                                    <input type="text" placeholder="--select name--" required>
+                                </span>
+                                <span class="text">Topic/ Book reviewed:</span>
+                                <span class="input">
+                                    <input type="text" required>
+                                </span>
+                                <div>
+                                    <span class="text">Date:</span>
+                                    <span class="input">
+                                        <input type="date" required>
+                                    </span>
+                                    <span class="text">Time Spent:</span>
+                                    <span class="input">
+                                        <input type="number" required>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="text">Time grade:</span>
+                                    <span class="input">
+                                        <select name="grade" id="">
+                                            <option value="">select grade</option>
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                        </select>
+                                    </span>
+                                    <span class="text">Speech quality:</span>
+                                    <span class="input">
+                                        <select name="grade" id="">
+                                            <option value="">select grade</option>
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <span class="text">Comments:</span>
+                                <span class="input">
+                                    <textarea rows="3" cols="50" required></textarea>
+                                </span>
+                                <span class="button">
+                                    <input type="button" name="allocate" value="Save Speech">
+                                    <input type="reset" name="clear" value="Clear">
+                                </span>
+                            </fieldset>
+                        </form>
+                    </div>
+                </main>
+        </div>
+        <div class="footer">
+            <footer>@2026</footer>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>

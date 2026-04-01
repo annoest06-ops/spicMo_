@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\sj02093\Desktop\programming\python\dashboard\static\index.css">
+    <link rel="stylesheet" href="C:\Users\sj02093\Desktop\programming\python\dashboard\static\dashboard-admin.css">
+    <link rel="stylesheet" href="C:\Users\sj02093\Desktop\programming\python\dashboard\static\create-report.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <title>Create Report</title>
+</head>
+<body>
+    <div id="page-grid">
+        <div class="page-header">
+            <nav id="top-nav">
+                <div class="header-links-container">
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="header-links-container">
+                   <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </span>
+                    </a> 
+                </div> 
+            </nav>
+        </div>
+        <div class="main-content">
+                <aside>
+                    <a class="aside-link" href="">
+                        <span class="icon">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </span>
+                        <span class="icon-text">New Speech</span>
+                    </a>
+                    <a class="aside-link" href="">
+                        <span class="icon">
+                            <i class="fa fa-microphone" aria-hidden="true"></i>
+                        </span>
+                        <span class="icon-text">Said Speeches</span>
+                    </a>
+                    <a class="aside-link" href="">
+                        <span class="icon">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                        </span>
+                        <span class="icon-text">homeroom teachers</span>
+                    </a>
+                    <a class="aside-link" href="">
+                        <span class="icon">
+                            <i class="fa fa-sticky-note" aria-hidden="true"></i>
+                        </span>
+                        <span class="icon-text">Report</span>
+                    </a>
+                </aside>
+                <main>
+                    <div class="dashboard-summary">
+                        <div class="summary-spans">
+                            <div class="summary-info">
+                                <span>
+                                    <h4>Date:</h4>
+                                    <h3>{{}}</h3>
+                                </span>
+                                <span>
+                                    <h4>Class:</h4>
+                                    <h3>{{}}</h3>
+                                </span>
+                                <span>
+                                    <h4>Stream:</h4>
+                                    <h3>{{}}</h3>
+                                </span>
+                            </div>
+                            <div class="summary-info">
+                                <span>
+                                    <h4>Teacher:</h4>
+                                    <h3>{{}}</h3>
+                                </span>
+                            </div> 
+                        </div>
+                        
+                        <div class="summary-spans">
+                            <span>
+                                <h4>Status:</h4>
+                                <span class="progress">
+                                    {{Progress-round1..%..}}
+                                </span>
+                                <span>
+                                    {{Progress-round2..%..}}
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="dashboard-record-output">
+                        <fieldset>
+                            <table id="dashboard-record-output-table">
+                                <caption>Best Speakers</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Select</th>
+                                        <th>Category</th>
+                                        <th>Date</th>
+                                        <th>Name</th>
+                                        <th>Topic</th>
+                                        <th>Time</th>
+                                        <th>Time grade</th>
+                                        <th>Quality grade</th>
+                                        <th>Comments</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <!--This is to show all list of best round speakers-->
+                                {% for row in data %}                                        
+                                        <td>
+                                            <form action="">
+                                                <input class="item" type="checkbox" name="select-winner" value="{{ row.Name }}">
+                                            </form>
+                                        </td>
+                                        <td>{{row.Category}}</td>
+                                        <td>{{row.Date}}</td>
+                                        <td>{{row.Name}}</td>
+                                        <td>{{row.Topic}}</td>
+                                        <td>{{row.Time}}</td>
+                                        <td>{{row.Time grade}}</td>
+                                        <td>{{row.Quaity grade}}</td>
+                                        <td>{{row.Comments}}</td>
+                                    </tr>
+                                    
+                               </tbody>
+                            </table>
+
+                            <table id="dashboard-record-output-table">
+                                <caption>Most Improved</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Select</th>
+                                        <th>Category</th>
+                                        <th>Date</th>
+                                        <th>Name</th>
+                                        <th>Topic</th>
+                                        <th>Time</th>
+                                        <th>Time grade</th>
+                                        <th>Quality grade</th>
+                                        <th>Comments</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <!--This is to show all list of best round speakers-->
+                                {% for row in data %}                                        
+                                        <td>
+                                            <form action="">
+                                                <input class="item" type="checkbox" name="select-winner" value="{{ row.Name }}">
+                                            </form>
+                                        </td>
+                                        <td>{{row.Category}}</td>
+                                        <td>{{row.Date}}</td>
+                                        <td>{{row.Name}}</td>
+                                        <td>{{row.Topic}}</td>
+                                        <td>{{row.Time}}</td>
+                                        <td>{{row.Time grade}}</td>
+                                        <td>{{row.Quaity grade}}</td>
+                                        <td>{{row.Comments}}</td>
+                                    </tr>
+                                    
+                               </tbody>
+                            </table>
+                        </fieldset>
+                    <div class="winner-report-container">
+                        <form id="winner-report-form" action="">
+                        
+                            <span class="text">Optional Award To:</span>
+                            <span class="input">
+                                <input type="text" placeholder="--select name--">
+                            </span>
+                            <span class="text">Reason for optional:</span>
+                            <span class="input">
+                                <textarea name="optional-award-reason" id=""></textarea>
+                            </span>
+                            <span class="button">
+                                <input type="button" name="allocate" value="Submit report">
+                            </span>
+                        </form>
+                    </div>
+                    </div>
+                </main>
+        </div>
+        <div class="footer">
+            <footer>@2026</footer>
+        </div>
+    </div>
+</body>
+</html>

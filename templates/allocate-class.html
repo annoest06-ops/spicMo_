@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\sj02093\Desktop\programming\python\dashboard\static\index.css">
+    <link rel="stylesheet" href="C:\Users\sj02093\Desktop\programming\python\dashboard\static\manage.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <title>admin-homeroom allocation</title>
+</head>
+<body>
+    <div id="page-grid">
+        <div class="page-header">
+            <nav id="top-nav">
+                <div class="header-links-container">
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="header-links-container">
+                   <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </span>
+                    </a> 
+                </div> 
+            </nav>
+        </div>
+        <div class="main-content">
+                <aside>
+                    <a class="aside-link" href="">
+                        <span class="icon">
+                            <i class="fa fa-microphone" aria-hidden="true"></i>
+                        </span>
+                        <span class="icon-text">Said Speeches</span>
+                    </a>
+                    <a class="aside-link" href="">
+                        <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                        <span class="icon-text">Homeroom teachers</span>
+                    </a>
+                    <a class="aside-link" href="">
+                        <span class="icon"><i class="fa fa-sticky-note" aria-hidden="true"></i></i></span>
+                        <span class="icon-text">Report</span>
+                    </a>
+                </aside>
+                <main>
+                    <div class="actions-bar">
+                        <a class="action-link" href="C:\Users\sj02093\Desktop\programming\python\dashboard\templates\manage.html">
+                            <span class="action-icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                            <span class="action-text">Manage</span>
+                        </a>
+                        <a class="action-link" href="C:\Users\sj02093\Desktop\programming\python\dashboard\templates\allocate-class.html">
+                            <span class="action-icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                            <span class="action-text">Allocate class</span>
+                        </a>
+                    </div>
+                    <div class="dashboard-record-output">
+                        <form id="homeroom-allocation-form" action="">
+                            <div class="form-info">
+                                <span class="icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                <span class="allocation-text">Assign teacher a class</span>
+                            </div>
+                            <fieldset>
+                                <span class="text">Name:</span>
+                                <span class="input">
+                                    <input type="text" placeholder="--select name--" required>
+                                </span>
+                                <div>
+                                    <span class="text">Class:</span>
+                                    <select name="class" id="">
+                                        <option value="form1-6">All classes</option>
+                                        <option value="form1">Form 1</option>
+                                        <option value="form2">Form 2</option>
+                                        <option value="form3">Form 3</option>
+                                        <option value="form4">Form 4</option>
+                                        <option value="form5">Form 5</option>
+                                        <option value="form6">Form 6</option>
+                                    </select>
+                                    <span class="text">Stream:</span>
+                                    <select name="stream" id="">
+                                        <option value="streamA">A</option>
+                                        <option value="streamB">B</option>
+                                        <option value="streamC">C</option>
+                                        <option value="streamD">D</option>
+                                        <option value="streamE">E</option>
+                                        <option value="streamF">F</option>
+                                        <option value="streamG">G</option>
+                                        <option value="streamH">H</option>
+                                    </select>
+                                </div>
+                                <span class="text">Password:</span>
+                                <span class="input">
+                                    <input type="text" required>
+                                </span>
+                                <span class="button">
+                                    <input type="button" name="allocate" value="Allocate">
+                                    <input type="reset" name="clear" value="Clear">
+                                </span>
+                            </fieldset>
+                        </form>
+                    </div>
+                </main>
+            </div>
+        <div class="footer">
+            <footer>@2026</footer>
+        </div>
+    </div>
+</body>
+</html>

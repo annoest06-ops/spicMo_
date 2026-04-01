@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\sj02093\Desktop\programming\python\dashboard\static\index.css">
+    <link rel="stylesheet" href="C:\Users\sj02093\Desktop\programming\python\dashboard\static\dashboard-admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <title>dashboard-admin</title>
+</head>
+<body>
+    <div id="page-grid">
+        <div class="page-header">
+            <nav id="top-nav">
+                <div class="header-links-container">
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="header-links-container">
+                   <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="header-links" href="">
+                        <span>
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </span>
+                    </a> 
+                </div> 
+            </nav>
+        </div>
+        <div class="main-content">
+                <aside>
+                    <a class="aside-link" href="">
+                        <span class="icon">
+                            <i class="fa fa-microphone" aria-hidden="true"></i>
+                        </span>
+                        <span class="icon-text">Submitted Speeches</span>
+                    </a>
+                    <a class="aside-link" href="">
+                        <span class="icon">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                        </span>
+                        <span class="icon-text">homeroom teachers</span>
+                    </a>
+                    <a class="aside-link" href="">
+                        <span class="icon">
+                            <i class="fa fa-sticky-note" aria-hidden="true"></i>
+                        </span>
+                        <span class="icon-text">Report</span>
+                    </a>
+                </aside>
+                <main>
+                    <form id="filter-form" action="">
+                        <input type="text" placeholder="Students name">
+                        <input type="date">
+                        <select name="class" id="">
+                            <option value="form1-6">All classes</option>
+                            <option value="form1">Form 1</option>
+                            <option value="form2">Form 2</option>
+                            <option value="form3">Form 3</option>
+                            <option value="form4">Form 4</option>
+                            <option value="form5">Form 5</option>
+                            <option value="form6">Form 6</option>
+                        </select>
+                        <select name="stream" id="">
+                            <option value="streamA">A</option>
+                            <option value="streamB">B</option>
+                            <option value="streamC">C</option>
+                            <option value="streamD">D</option>
+                            <option value="streamE">E</option>
+                            <option value="streamF">F</option>
+                            <option value="streamG">G</option>
+                            <option value="streamH">H</option>
+                        </select>
+                        <button type="submit" class="button" name="search-records" value="Search">Search</button>
+                        <button type="reset" class="button" name="search-records" value="Clear">Clear</button>
+                    </form>
+                    <div class="dashboard-summary">
+                        <div class="summary-spans">
+                            <div class="summary-info">
+                                <span>
+                                    <h4>Date:</h4>
+                                    <h3>{{}}</h3>
+                                </span>
+                                <span>
+                                    <h4>Class:</h4>
+                                    <h3>{{}}</h3>
+                                </span>
+                                <span>
+                                    <h4>Stream:</h4>
+                                    <h3>{{}}</h3>
+                                </span>
+                            </div>
+                            <div class="summary-info">
+                                <span>
+                                    <h4>Teacher:</h4>
+                                    <h3>{{}}</h3>
+                                </span>
+                            </div> 
+                        </div>
+                        
+                        <div class="summary-spans">
+                            <span>
+                                <h4>Status:</h4>
+                                <span class="progress">
+                                    {{Progress-round1..%..}}
+                                </span>
+                                <span>
+                                    {{Progress-round2..%..}}
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="dashboard-record-output">
+                        <fieldset>
+                            <table id="dashboard-record-output-table">
+                                <thead>
+                                    <tr>
+                                        <th>status</th>
+                                        <th>Name</th>
+                                        <th>Topic</th>
+                                        <th>Time</th>
+                                        <th>Time grade</th>
+                                        <th>Quality grade</th>
+                                        <th>Comments</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>Hussein Nkya</td>
+                                        <td>Importances of good leadership</td>
+                                        <td>4.30</td>
+                                        <td>A</td>
+                                        <td>B</td>
+                                        <td>the speaker spoke very well and in fact he should get two half cakes if possible</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                        <td>{{}}</td>
+                                    </tr>
+                               </tbody>
+                            </table>
+                        </fieldset>
+                    </div>
+                </main>
+        </div>
+        <div class="footer">
+            <footer>@2026</footer>
+        </div>
+    </div>
+</body>
+</html>

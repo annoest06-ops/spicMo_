@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container{
+    width: 60%;
+}
+
+.allocation-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #1E3A8A;
+}
+.allocation-text{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+form{
+    width: 100%;
+}
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid #1E3A8A;
+    border-radius: 10px;
+    gap: 5px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+form div{
+    display: flex;
+    gap: 3px;
+    margin-top: 5px;
+}
+form input[type ="text"]{
+    height: 30px;
+    width: 90%;
+}
+form input[type = "text"]:hover,
+form input[type = "text"]:focus,
+form input[type = "text"]:active{
+    padding-left: 5px;
+    border: 2px solid #1E3A8A;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+form select[name ="class"]{
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+}
+form select[name ="stream"]{
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+}
+form select:hover,
+form select:focus,
+form select:active{
+    transform: scale(1.05);
+    border: 2px solid #1E3A8A;    
+    outline: none;
+}
+
+form input[type ="button"]{
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #1E3A8A;
+    margin-top: 5px;
+}
+form input[type ="button"]:hover{
+    background-color: #3B82F6;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+form input[type ="reset"]{
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #1E3A8A;
+    margin-top: 5px;
+}
+form input[type ="reset"]:hover{
+    background-color: #3B82F6;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+span.text{
+    font-size: 20px;
+    font-weight: bold;
+    color: #1E3A8A;
+    margin-top: 5px;
+}

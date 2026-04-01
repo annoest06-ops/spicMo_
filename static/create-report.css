@@ -1,0 +1,49 @@
+.winner-report-container{
+    top: 10px;
+}
+#winner-report-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    gap: 5px;
+}
+
+form, span .text{
+    font-size: large;
+    font-weight: bold;
+    color: #1E3A8A;
+}
+
+form input[type ="text"],
+form textarea{
+    border: 1px #3B82F6 solid;
+    height: 30px;
+    width: 90%;
+}
+form input[type ="text"]:hover,
+form input[type ="text"]:focus,
+form input[type ="text"]:active,
+form textarea:hover,
+form textarea:focus,
+form textarea:active
+{
+    padding-left: 5px;
+    border: 2px solid #1E3A8A;
+    border-radius: 5px;
+    outline: none;
+}
+
+form input[type ="button"]{
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #1E3A8A;
+    margin-top: 5px;
+}
+form input[type ="button"]:hover{
+    background-color: #3B82F6;
+    cursor: pointer;
+    transform: scale(1.05);
+}
